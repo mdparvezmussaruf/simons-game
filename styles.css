@@ -90,5 +90,18 @@ body::before {
   .btn {
     height: 100px;
     width: 100px;
+    margin: 10px;
+    
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ensures 2 buttons per row */
+    grid-gap: 20px; /* Adds spacing between buttons */
+    width: fit-content; /* Shrinks container to fit the grid */
+    margin: auto;
+  }
+  
+  .row {
+    display: contents; /* Removes extra spacing issues caused by div wrapping */
   }
 }
